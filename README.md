@@ -30,8 +30,10 @@ Each table can hold a value and the pointer can change which table it is pointin
 Let's start looking at how to code in this language now.
 
 Like previously mentioned, we can change which table the pointer is looking at by using the < and > symbols.
-> : Move to the table on the right
-< : Move to the table on the left
+
+"> : Move to the table on the right"
+
+"< : Move to the table on the left"
 
 If I type > and run the code, this is what happens.
 
