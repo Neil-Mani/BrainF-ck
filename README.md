@@ -22,6 +22,7 @@ When you are thinking about BrainFuck, you want to think about thousands of tabl
 
 
 [ ] [ ] [ ] [ ] [ ] [ ] [ ] ...
+
  ^
 
  
@@ -37,7 +38,9 @@ If I type > and run the code, this is what happens.
 >
 
 [ ] [ ] [ ] [ ]
+
      ^
+     
 As you can see the pointer changed from the first table to the second.
 Next we can add values to the tables. Each table has a starting value of zero.
 
@@ -49,6 +52,7 @@ So what we can do is -
 ++++++++++>+++++
 
 [10] [5 ] [ ] [ ] [ ]
+
       ^
 As we can see, we added 10 to the first table. Then we moved the pointer to the second table and added 5.
 
@@ -66,8 +70,11 @@ So instead, we can use loops indicated by the [ ] signs.
 Let's break down the code.
 
 First, we move the pointer to the right and add 9.
+
 [ ] [9] [ ] [ ]
+
      ^
+     
 Next we start the loop.
 In the most simplest terms, the code adds 8 to the first table everytime the second table looses 1.
 We can see that in the code, after the bracet, it moves back the the first table, adds 8, then goes to the second table, and subtracts 1.
@@ -76,11 +83,17 @@ Once it does, we can print the output with the . symbol.
 We can see how the table looks after a few loops.
 
 [8] [8]
+
      ^
+     
 [16] [7]
+
      ^
+     
 ...
+
 [72] [0]
+
       ^
       
 If we do the math, 8x9, we get 72 which gives us our ASCII value of 72.
@@ -94,6 +107,7 @@ If we want to print "Hello World!", we need to go from the ASCII Value of H to t
 
 So if we look at the values, we need to change 72 to 101.
 In other words, we have to add 29.
+
 >+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.
 
 The first part of the code like previously mentioned prints out the Letter H (Beginning to the first period)
