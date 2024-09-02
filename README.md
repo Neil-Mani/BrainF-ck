@@ -18,9 +18,13 @@ How to use BrainFuck
 As stated previosly, there are only 8 simple commands that consist of the following characters:
 .,+-[]<>
 
-When you are thinking about BrainFuck, you want to think about thousands of tables with somthing point at only one.
+When you are thinking about BrainFuck, you want to think about thousands of tables with a pointer that points at only one.
+
+
 [ ] [ ] [ ] [ ] [ ] [ ] [ ] ...
  ^
+
+ 
 Each table can hold a value and the pointer can change which table it is pointing at.
 Let's start looking at how to code in this language now.
 
